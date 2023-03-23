@@ -1,0 +1,205 @@
+/* #region ACTION BAR */
+.lead-status {
+    float: right;
+}
+.lead-status .ui.dropdown {
+    float: right;
+    background: transparent;
+    color: var(--color-text-action);
+    outline: none;
+    border: none;
+    padding-top: 14px;
+}
+.ui.selection.visible.dropdown>.text:not(.default) {
+    color: var(--color-text-action);
+}
+.lead-status .ui.selection.dropdown>.dropdown.icon {
+    top: 15px;
+}
+.leads-bar {
+    width: 100%;
+    height: 20px;
+}
+.leads-bar .btn {
+    float: right;
+    margin: 4px 0px 0px 4px;
+}
+.leads-bar .btn i {
+    margin-top: 1px;
+}
+.leads-bar #leads-list {
+    display: none;
+}
+.leads-search {
+    display: inline-block;
+}
+#leads-search {
+    width: 486px;
+}
+.counters {
+    display: inline-block;
+    margin-left: 12px;
+    color: var(--color-table-row-text);
+}
+#leads-add-folder {
+    outline: 0;
+}
+#leads-call,
+#leads-email,
+#leads-sms,
+#leads-delete,
+#leads-remove,
+#leads-merge,
+.lead-status {
+    display: none;
+}
+/* #endregion */
+/* #region FORM ELEMENTS */
+.docker {
+    max-height: 82%;
+    overflow-y: auto;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+.col-datecreated,
+.col-datemodified,
+.col-lastaction {
+    display: none;
+}
+td.col-datecreated,
+td.col-datemodified {
+    font-size: 12px;
+}
+h2 {
+    display: block;
+    margin: 0 0 .28571429rem 0;
+    color: var(--color-h2);
+    font-size: .92857143em;
+    font-weight: 700;
+    text-transform: none;
+}
+.ui-center > .loader {
+    display: block;
+    position: absolute;
+    clear: both;
+    height: 180px;
+    width: calc(100% - 40px);
+    border-width: 1px;
+    border-color: var(--color-data-border);
+    border-style: solid;
+    border-radius: 5px;
+    background: var(--color-data-bg);
+    margin: 0px;
+    padding: 0px;
+}
+/* #endregion */
+/* #region MODALS */
+#modal-import .ui.grid .column:first-child,
+#modal-import .ui.grid .column:last-child {
+    text-align: left;
+}
+#modal-import label {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+#import-file {
+    display: none;
+}
+#import-fields {
+    display: none;
+    margin: 8px 0px;
+}
+#modal-import-file .ui.blue.button {
+    font-weight: 400;
+}
+/* #endregion */
+/* #region RESPONSIVE CSS */
+@media only screen and (max-width: 1500px) {
+    #leads-search {
+        width: 200px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+/* @media only screen and (max-width: 1098px) { */
+    .leads-bar .btn span {
+        display: none;
+    }
+    .leads-bar .btn {
+        padding: .78571429em;
+    }
+    .leads-bar .btn i {
+        opacity: .9;
+        margin: 0;
+        vertical-align: top;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .ui-bar .ui.button span {
+        display: none;
+    }
+    .lead-status {
+        display: none;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .leads-bar {
+        height: 50px;
+    }
+    #leads-search {
+        width: 130px;
+    }
+    .counters {
+        display: block;
+        margin-top: 8px;
+    }
+    #leads-total-counter {
+        margin-left: 0px;
+    }
+    .docker {
+        /* max-height: 75%; */
+    }
+}
+@media only screen and (max-width: 560px) {
+    #leads-delete {
+        display: none;
+    }
+}
+@media only screen and (max-width: 420px) {
+    #leads-search {
+        width: 100px;
+    }
+    .docker {
+        /* max-height: 60%; */
+    }
+}
+/* #endregion */
+/* #region LEFT MENU */
+.linkRemove {
+    float: right;
+    display: none;
+    background-color: var(--color-leftmenu-sub-link-bg);
+}
+.linkRemove > .deleteLeadSearch,
+.linkRemove > .deleteLeadList,
+.linkRemove > .deleteLeadSearch:link,
+.linkRemove > .deleteLeadList:link {
+    color: var(--color-table-link-icon);
+    background-color: var(--color-leftmenu-sub-link-bg);
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    padding-top: 6px;
+    padding-right: 6px;
+}
+nav>ul .sub-link a.deleteLeadSearch:hover i.icon, 
+nav>ul .sub-link a.deleteLeadList:hover i.icon {
+    color: var(--color-red);
+}
+#dragSelection {
+    position: absolute;
+    z-index: 99;
+    display: none;
+    border: 1px solid var(--color-primary);
+    background-color: rgba(28,132,195,0.3);
+}
+/* #endregion */

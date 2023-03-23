@@ -1,0 +1,46 @@
+/* #region User Account UI */
+#user-companyemail input {
+    text-align: right;
+}
+#user-companyemail i.envelope {
+    color: var(--color-primary);
+    opacity: 1;
+}
+#user-companyphone {
+    display: none;
+}
+#user-companyphone .ui.dropdown i.phone {
+    opacity: 1;
+    position: relative;
+    right: 2px;
+    color: var(--color-primary);
+}
+#user-invite-email {
+    display: none;
+}
+#user-savetocrm-incomingmail,
+#user-savetocrm-outgoingmail {
+    margin: 0px;
+}
+#user-mail-signature {
+    height: 150px;
+    width: 100%;
+    margin: 0;
+    tap-highlight-color: rgba(255,255,255,0);
+    padding: .78571429em 1em;
+    background: var(--color-input-bg);
+    border: 1px solid var(--color-input-border);
+    outline: 0;
+    color: var(--color-input-text);
+    border-top-left-radius: .28571429rem;
+    border-top-right-radius: .0px;
+    box-shadow: 0 0 0 0 transparent inset;
+    transition: color .2s ease,border-color .2s ease;
+    font-size: 14px;
+    line-height: 1.2857;
+    resize: vertical;
+    overflow: auto;
+    position: relative;
+    text-align: left;
+}
+/* #endregion */

@@ -1,0 +1,140 @@
+:root {
+    --color-primary: #1C84C3;
+    --color-secondary: #4183C4;
+    --color-bg: #F6F8F9;
+    --color-text-action: #333;
+    --color-link-hover: #FFF;
+
+    --color-leftmenu-bg: #FFF;
+    --color-leftmenu-border: #E6E6E6;
+    --color-leftmenu-settings-bg: #FCFCFC;
+    --color-leftmenu-text: #666;
+    --color-leftmenu-sub-link-bg: #FAFAFA;
+    --color-leftmenu-sub-link-text: #666;
+    --color-leftmenu-sub-border: #EEE;
+
+    --color-btn-bg: #E0E1E2;
+    --color-btn-text: #575757;
+    --color-btn-text-hover: #FFF;
+
+    --color-green: #228B22;
+    --color-red: #CF0404;
+    --color-h1: #000;
+    --color-h2: #333;
+    --color-h3: #666;
+    
+    --color-ui-bar-gradient-from: #FFF;
+    --color-ui-bar-gradient-to: #EEE;
+    --color-ui-bar-link: #3BB6FF;
+    --color-ui-bar-link-hover: #000;
+    --color-ui-bar-search-text: #000;
+    --color-ui-bar-search-underline: #333;
+    --color-ui-bar-search-total: #222;
+    --color-ui-bar-search-selected: #111;
+
+    --color-userdetails-bg: #FAFAFA;
+
+    --color-modal-exit-icon: #FFF;
+    --color-modal-header-gradient-from: #FFF;
+    --color-modal-header-gradient-to: #EEE;
+    --color-modal-bg: #EFEFEF;
+    --color-modal-actions-gradient-from: #FEFEFE;
+    --color-modal-actions-gradient-to: #EEE;
+
+    --color-table-border: #DCDCDC;
+    --color-table-header-bg: #F9FAFB;
+    --color-table-header-text: #000;
+    --color-table-row-text: #3D3D3D;
+    --color-table-row-bg: #FFF;
+    --color-table-row-odd-bg: #F0F0F6;
+    --color-table-row-hover-bg: #F9F9F9;
+    --color-table-row-myrow-bg: #F8F8F8;
+    --color-table-link-icon: #CFCFCF;
+    
+    --color-table-icon-bg: #FAFAFA;
+
+    --color-data-border: #E5E5E5;
+    --color-data-bg: #F2F4F5;
+    --color-data-text: #000;
+
+    --color-checkbox-bg: #FFF;
+    --color-checkbox-check: #000;
+    --color-checkbox-border: #D4D4D5; 
+    --color-checkbox-border-hover: rgba(34,36,38,.35);
+
+    --color-checkbox-label: rgba(0,0,0,.95);
+    --color-checkbox-toggle-bg: rgba(0,0,0,.05);
+    --color-checkbox-toggle-bg-hover: rgba(0,0,0,.15);
+    --color-checkbox-toggle-checked: #2185d0;
+    --color-checkbox-toggle-focused: #0d71bb;
+    --color-checkbox-slider-checked: #545454;
+    --color-checkbox-slider-focused: #000;
+    --color-checkbox-label-hover: rgba(0,0,0,.8);
+    
+    --color-progress-bg: #0d71bb;
+    --color-progress-bar: #2f93e0;
+
+    --color-input-bg: #FFF;
+    --color-input-border: rgba(34,36,38,.15);
+    --color-input-border-hover: #85b7d9;
+    --color-input-text: rgba(0,0,0,.87);
+    --color-input-text-hover: rgba(0,0,0,.95);
+    --color-input-icon: #000;
+    /* --color-input-highlight-border: #1C84C3; */
+    --color-input-highlight-bg: #D5EBF5;
+
+    --color-dropdown-bg: #FFF;
+    --color-dropdown-text: rgba(0,0,0,.87);
+    --color-dropdown-border: rgba(34,36,38,.15);
+    --color-dropdown-border-hover: rgba(34,36,38,.35);
+    --color-dropdown-text-focus: rgba(0,0,0,.8);
+
+    --color-label-bg: #E8E8E8;
+    --color-label-text: rgba(0,0,0,.6);
+    --color-label-basic-bg: #FFF;
+    --color-label-basic-text: rgba(0,0,0,.87);
+    --color-label-basic-border: rgba(34,36,38,.15);
+
+    --color-tabmenu-border: rgba(34, 36, 38, 0.1);
+    --color-tabmenu-text-hover: rgba(0, 0, 0, 0.95);
+    --color-tabmenu-secondary-bg-hover: rgba(0, 0, 0, 0.05);
+
+    --color-toolbar-bg: #EEE;
+    --color-toolbar-border: rgba(34,36,38,.15);
+
+    --color-segment-bg: #FFF;
+    --color-segment-border: rgba(34,36,38,.15);
+
+    --color-message-bg: #FFF;
+    --color-message-border: #DCDCDC;
+    --color-message-text: #333;
+
+    --color-message-or-bg: #FFF;
+    --color-message-or-text: rgba(0, 0, 0, 0.4);
+
+    --color-message-info-bg: #f8ffff;
+    --color-message-info-text: #276f86;
+    --color-message-info-header: #0e566c;
+    --color-message-info-border: #a9d5de;
+
+    --color-message-warning-bg: #fffaf3;
+    --color-message-warning-text: #573a08;
+    --color-message-warning-header: #573a08;
+    --color-message-warning-border: #c9ba9b;
+
+    --color-message-error-bg: #fff6f6;
+    --color-message-error-text: #9f3a38;
+    --color-message-error-header: #9f3a38;
+    --color-message-error-border: #e0b4b4;
+
+    --color-thumb-overlay-bg: #1678c2;
+    --color-thumb-overlay-text: #FFF;
+    --color-thumb-overlay-link-hover: #CCC;
+
+    --color-toolmenu-title-bg: #FFF;
+    --color-toolmenu-title-border: #E6E6E6;
+    --color-toolmenu-title-text: rgba(0,0,0,.6);
+    --color-toolmenu-content-bg: #FCFCFC;
+    --color-toolmenu-content-border: #E6E6E6;
+    --color-toolmenu-content-text: rgba(0,0,0,.6);
+}

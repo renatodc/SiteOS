@@ -1,0 +1,162 @@
+/* #region FORM ELEMENTS */
+#modal-write {
+    margin: 40px auto 0px;
+}
+#modal-write .recipients {
+    display: flex;
+    flex-orientation: row;
+    align-items: bottom;
+}
+#modal-write-to {
+    flex: 1;
+}
+.ui.form .fields.extrarecipients {
+    display: none;
+}
+#modal-write .ccbuttons {
+    flex: 0 0 130px;
+    vertical-align: top;
+}
+#modal-write-cc {
+    display: none;
+}
+#modal-write-bcc {
+    display: none;
+}
+#modal-write-to .ui.default.dropdown:not(.button)>.text, .ui.dropdown:not(.button)>.default.text,
+#modal-write-cc .ui.default.dropdown:not(.button)>.text, .ui.dropdown:not(.button)>.default.text,
+#modal-write-bcc .ui.default.dropdown:not(.button)>.text, .ui.dropdown:not(.button)>.default.text {
+    color: #929292de;
+}
+#modal-write-subject input::placeholder {
+    color: #929292de;
+}
+.write-message > .tb-html {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.modal-write-message {
+    margin: 0;
+    tap-highlight-color: #000;
+    padding: .78571429em 1em;
+    background: var(--color-message-bg);
+    border: 1px solid var(--color-message-border);
+    outline: 0;
+    color: var(--color-message-text);
+    border-top-left-radius: .28571429rem;
+    box-shadow: 0 0 0 0 transparent inset;
+    transition: color .2s ease,border-color .2s ease;
+    font-size: 14px;
+    line-height: 1.2857;
+    resize: vertical;
+    height: 240px;
+    max-height: 240px;
+    overflow: auto;
+    position: relative;
+    text-align: left;
+    border-top-right-radius: 0px;
+}
+.modal-write-message:empty:before {
+    color: #929292de;
+}
+.modal-write-message.en:empty:before {
+    content:"Message";
+}
+.modal-write-message.es:empty:before {
+    content:"Mensaje";
+}
+
+/* BUTTON HOVERS */
+.ui.button.cc.btn:hover,
+.ui.button.bcc.btn:hover,
+.ui.multiple.dropdown>.label:hover,
+.ui.active.label {
+    background: var(--color-primary) !important;
+    color: var(--color-link-hover) !important;
+    transition: background 0.3s ease;
+}
+
+/* ATTACHMENTS */
+#modal-write-attachments {
+    display: none;
+}
+.modal-write-attach {
+    display: block;
+    padding: 10px 0px; 
+    border-bottom: 1px solid var(--color-table-border);
+}
+.modal-write-attach .ui.grid {
+    align-items: center;
+}
+.modal-write-attach span.name {
+    margin: 0px 8px;
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: middle;
+    max-width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.modal-write-attach a.name,
+.modal-write-attach a.name:link,
+.modal-write-attach a.name:visited {
+    margin: 0px 8px;
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: middle;
+    max-width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--color-table-header-text);
+}
+.modal-write-attach a.name:hover {
+    color: var(--color-primary);
+    transition: color 0.2s ease;
+}
+.modal-write-attach span.size {
+    color: var(--color-h3);
+    font-weight: 300;
+    font-size: 12px;
+}
+.modal-write-attach a.cancel {
+    margin: 0px 0px 0px 8px;
+}
+.modal-write-attach .ui.progress {
+    margin: 0px;
+}
+.modal-write-attach i.checkmark {
+    color: var(--color-green);
+    display: inline-block;
+}
+.modal-write-attach img {
+    max-width: 60px;
+    max-height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#modal-write-discard {
+    float: left;
+}
+/* #endregion */
+/* #region RESPONSIVE CSS */
+@media only screen and (max-width: 600px) {
+    #modal-write .ccbuttons {
+        flex: none;
+        margin: 0px 0px 8px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    #modal-write-discard {
+        float: none;
+    }
+    .actions > div.ui.button {
+        padding: 0.78571429em 0.78571429em 0.78571429em;
+    }
+    .actions > .ui.button:not(.icon) > .icon:not(.button):not(.dropdown) {
+        margin: 0px;
+    }
+    .actions > div.ui.button span {
+        display: none;
+    }
+}
+/* #endregion */

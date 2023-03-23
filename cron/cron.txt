@@ -1,0 +1,3 @@
+0 0 1 * * /usr/bin/php /home/ec2-user/cron/clean-trash.php
+0 0 1 * * /usr/bin/php /home/ec2-user/cron/clean-spam.php
+0 0 1 * * /usr/bin/php /home/ec2-user/cron/clean-data.php

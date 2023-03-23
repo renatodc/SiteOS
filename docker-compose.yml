@@ -1,0 +1,52 @@
+version: '3'
+
+name: 'siteos'
+
+volumes:
+  caddy_data:
+    external: true
+  caddy_config:
+
+services:
+  php-fpm:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 9000:9000
+    volumes:
+      - ./:/srv
+      - ./db/config.ini:/home/config.ini
+      - ./db/GeoLite2-City.mmdb:/home/GeoLite2-City.mmdb
+      - /srv/node_modules
+      - /srv/files
+      - /srv/api/vendor
+      - /srv/mail/vendor
+      - /srv/rsc/api/vendor
+      - /srv/db
+  caddy:
+    image: caddy:latest
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./:/srv
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+    links:
+      - php-fpm
+  mariadb:
+    image: mariadb:latest
+    restart: always
+    ports:
+      - 3306:3306
+    volumes:
+      - ./db/model.sql:/docker-entrypoint-initdb.d/model.sql
+    environment:
+      - MARIADB_DATABASE=${MARIADB_DATABASE}
+      - MARIADB_USER=${MARIADB_USER}
+      - MARIADB_PASSWORD=${MARIADB_PASSWORD}
+      - MARIADB_ROOT_PASSWORD=${MARIADB_ROOT_PASSWORD}

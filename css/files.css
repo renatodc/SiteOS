@@ -1,0 +1,318 @@
+/* #region ACTION BAR */
+#title {
+    max-width: 600px;
+}
+#ui-header .ui-left {
+    float: left;
+    width: 600px;
+}
+#ui-header .ui-right {
+    float: right;
+    width: calc(100% - 600px);
+}
+#ui-header .userMenu {
+    top: 50px;
+    right: 28px;
+}
+/* #endregion */
+/* #region FORM ELEMENTS */
+.userMenu .item {
+    font-size: 14px;
+}
+.ui-bar .ui.icon.inverted.button {
+    padding: 10px 15px;
+}
+.ui-bar span {
+    font-size: 15px;
+}
+#web-canvas {
+    height: calc(100% - 10px);
+}
+.ui.error.message h1,
+.ui.warning.message h1,
+.ui.info.message h1 {
+    font-weight: bold;
+}
+.ui.left.labeled.icon.button span {
+    margin-left: 8px;
+}
+#nav-folders {
+    display: block;
+}
+#nav-folders > .ui.basic.segment {
+    margin: 0px;
+    padding: 0px;
+    min-height: 70px;
+    border: none;
+    box-shadow: none;
+}
+.MuiAlert-root {
+    min-width: 300px;
+}
+/* #endregion */
+/* #region EDITORS */
+.ui.segment.placeholder {
+    position: absolute;
+    height: 93%;
+    width: 97%;
+    z-index: 3;
+    margin: 0px;
+}
+.ui.segment.placeholder i.icon {
+    color: var(--color-primary);
+}
+.ui.segment.editor {
+    position: absolute;
+    visibility: hidden;
+    height: 93%;
+    width: 97%;
+    z-index: 2;
+}
+.ui.segment.image {
+    position: absolute;
+    visibility: hidden;
+    height: 93%;
+    width: 93%;
+    z-index: 2;
+    margin: 0px;
+    overflow: scroll;
+}
+.ui.segment.audio {
+    position: absolute;
+    visibility: hidden;
+    height: 93%;
+    width: 93%;
+    z-index: 2;
+    margin: 0px;
+}
+.ui.segment.video {
+    position: absolute;
+    visibility: hidden;
+    height: 93%;
+    width: 93%;
+    z-index: 2;
+    margin: 0px;
+}
+/* #endregion */
+/* #region DIALOGS */
+.MuiPaper-root.MuiDialog-paper.MuiPaper-rounded,
+.MuiPaper-root.MuiPopover-paper.MuiPaper-rounded {
+    background: none;
+}
+.dialog .header.MuiDialogTitle-root span,
+.MuiTypography-h6 {
+    color: var(--color-text-action);
+}
+.dialog .header.MuiDialogTitle-root {
+    background: linear-gradient(to bottom, var(--color-modal-header-gradient-from) 0%, var(--color-modal-header-gradient-to) 80%);
+    color: var(--color-text-action);
+}
+.dialog .header.MuiDialogTitle-root i {
+    color: var(--color-primary);
+}
+.dialog .header.MuiDialogTitle-root span {
+    font-family: 'Trade Gothic', 'Michroma', sans-serif;
+    font-size: 18px;
+    margin-left: 6px;
+}
+.dialog .content {
+    background: var(--color-modal-bg);
+    color: var(--color-label-basic-text);
+    padding: 20px 20px 10px;
+}
+.dialog .actions {
+    background: linear-gradient(to top, var(--color-modal-actions-gradient-from) 0%,var(--color-modal-actions-gradient-to) 80%);
+    padding: 14px 20px;
+    display: block;
+    text-align: right;
+}
+.dialog .actions span {
+    font-size: 15px;
+    font-weight: 300;
+}
+.dialog .actions .inverted span {
+    color: var(--color-text-action);
+}
+.dialog .actions .ui.button.negative {
+    float: left;
+}
+/* #endregion */
+/* #region CONTEXT MENUS */
+.contextmenu > div {
+    line-height: 30px;
+    font-size: 12px;
+    background: var(--color-leftmenu-bg);
+    color: var(--color-leftmenu-text);
+    padding: 0px 17px 0px 14px;
+}
+.contextmenu .title > span {
+    padding-right: 6px;
+}
+.contextmenu .title > span > img {
+    vertical-align: top;
+    position: relative;
+    top: 7px;
+    height: 16px;
+    width: 16px;
+}
+.contextmenu .links li {
+    border-top: 1px solid var(--color-leftmenu-sub-border);
+}
+.contextmenu .links li:last-child {
+    border-bottom: 1px solid var(--color-leftmenu-sub-border);
+}
+.contextmenu .links li > a:link,
+.contextmenu .links li > a:visited {
+    height: 30px;
+    display: block;
+    overflow: hidden;
+    line-height: 30px;
+    font-size: 12px;
+    padding: 0px 17px 0px 14px;
+    background: var(--color-leftmenu-sub-link-bg);
+    color: var(--color-leftmenu-sub-link-text);
+ }
+.contextmenu .links li a:hover {
+    font-weight: bold;
+    color: var(--color-primary);
+}
+.contextmenu .links li a:hover i {
+    color: var(--color-primary);
+}
+
+.contextmenu .links li a.remove:hover {
+    font-weight: bold;
+    color: var(--color-red);
+}
+.contextmenu .links li a.remove:hover i {
+    color: var(--color-red);
+}
+/* #endregion */
+/* #region Semantic UI - Segment */
+.ui.placeholder.segment{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;max-width:initial;-webkit-animation:none;animation:none;overflow:visible;padding:1em 1em;min-height:18rem;background:var(--color-table-header-bg);border-color:rgba(34,36,38,.15);-webkit-box-shadow:0 2px 25px 0 rgba(34,36,38,.05) inset;box-shadow:0 2px 25px 0 rgba(34,36,38,.05) inset}
+.ui.placeholder.segment .button,
+.ui.placeholder.segment textarea{display:block}
+.ui.placeholder.segment .button,
+.ui.placeholder.segment .field,
+.ui.placeholder.segment textarea,
+.ui.placeholder.segment>.ui.input{max-width:15rem;margin-left:auto;margin-right:auto}
+.ui.placeholder.segment .column .button,
+.ui.placeholder.segment .column .field,
+.ui.placeholder.segment .column textarea,
+.ui.placeholder.segment .column>.ui.input{max-width:15rem;margin-left:auto;margin-right:auto}
+.ui.placeholder.segment>.inline{-ms-flex-item-align:center;align-self:center}
+.ui.placeholder.segment>.inline>.button{display:inline-block;width:auto;margin:0 .35714286rem 0 0}
+.ui.placeholder.segment>.inline>.button:last-child{margin-right:0}
+.ui.header {
+    color: var(--color-h1);
+}
+/* #endregion */
+/* #region UPLOAD WIDGET */
+.uploadfile .dropzone {
+    height: 100px;
+    /* background-color: #fff; */
+    background-color: var(--color-btn-bg);
+    /* border: 2px dashed rgb(187, 186, 186); */
+    border: 1px solid var(--color-input-border);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 15px;
+    color: var(--color-btn-text);
+}
+.uploadfile .dropzone.highlighted {
+    /* background-color: rgb(188, 185, 236); */
+    background-color: var(--color-primary);
+    color: var(--color-link-hover);
+}
+.uploadfile .dropzone input {
+    display: none;
+}
+.uploadfile .dropzone i {
+    opacity: 0.3;
+    margin-bottom: 6px;
+}
+.uploadfile-row {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50px;
+    margin: 10px 8px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.uploadfile-name {
+    margin-bottom: 8px;
+    font-size: 15px;
+    /* color: #555; */
+    color: var(--color-btn-text);
+}
+.uploadfile-bar-wrapper {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+}
+.uploadfile-bar-bg {
+    width: 100%;
+    height: 20px;
+    margin-right: 10px;
+    background: linear-gradient(to top, var(--color-ui-bar-gradient-from) 0%,var(--color-ui-bar-gradient-to) 80%);
+    border-radius: 5px;
+}
+.uploadfile-bar {
+    background-color: var(--color-progress-bg);
+    animation-name: uploadfile-loader;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    height: 100%;
+    margin: 0;
+    border-radius: 5px;
+}
+@keyframes uploadfile-loader {
+    0% {
+      background-color: var(--color-progress-bg);
+    }
+    50% {
+      background-color: var(--color-progress-bar);
+    }
+    100% {
+      background-color: var(--color-progress-bg);
+    }
+}
+/* #endregion */
+/* #region RESPONSIVE CSS */
+@media only screen and (max-width: 1100px) {
+    #ui-header .userMenu {
+        right: 22px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #ui-header .ui-left {
+        width: 41px;
+    }
+    #ui-header .ui-right {
+        width: calc(100% - 42px);
+    }
+    .MuiAlert-root {
+        min-width: auto;
+    }
+}
+@media only screen and (max-width: 500px) {
+    /* .dialog .actions .ui.button.negative {
+        float: none;
+    } */
+    .dialog .actions > .ui.button {
+        padding: 0.78571429em 0.78571429em 0.78571429em;
+    }
+    .dialog .actions > .ui.button:not(.icon) > .icon:not(.button):not(.dropdown) {
+        margin: 0px;
+    }
+    .dialog .actions > .ui.button span {
+        display: none;
+    }
+}
+/* #endregion */

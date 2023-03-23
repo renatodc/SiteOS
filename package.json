@@ -1,0 +1,25 @@
+{
+  "name": "siteos",
+  "version": "1.0.0",
+  "description": "Website Operating System",
+  "repository": {},
+  "license": "MIT",
+  "author": {
+    "name": "Renato Del Castillo"
+  },
+  "dependencies": {
+    "blueimp-file-upload": "^9.19.1",
+    "codemirror": "5.30.0",
+    "html2canvas": "0.5.0-beta4",
+    "indent.js": "0.1.5",
+    "interact.js": "1.2.8",
+    "jquery": "3.2.1",
+    "jquery-color": "1.0.0",
+    "papaparse": "4.3.6",
+    "sortablejs": "^1.10.1",
+    "spectrum-colorpicker": "1.8.0",
+    "sugar": "2.0.4",
+    "sugar-date": "2.0.4",
+    "tablesorter": "2.29.0"
+  }
+}

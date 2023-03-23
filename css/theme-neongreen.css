@@ -1,0 +1,147 @@
+:root {
+    --color-primary: #15C515;
+    --color-secondary: #4183C4;
+    --color-bg: #090706;
+    --color-text-action: #FFF;
+    --color-link-hover: #FFF;
+
+    --color-leftmenu-bg: #000;
+    --color-leftmenu-border: #191919;
+    --color-leftmenu-settings-bg: #030303;
+    --color-leftmenu-text: #FFF;
+    --color-leftmenu-sub-link-bg: #050505;
+    --color-leftmenu-sub-link-text: #FFF;
+    --color-leftmenu-sub-border: #111111;
+
+    --color-btn-bg: #27292B;
+    --color-btn-text: #AFAFAF;
+    --color-btn-text-hover: #FFF;
+
+    --color-green: #228B22;
+    --color-red: #CF0404;
+    --color-h1: #FFF;
+    --color-h2: #EEE;
+    --color-h3: #DDD;
+    
+    --color-ui-bar-gradient-from: #000;
+    --color-ui-bar-gradient-to: #000000;
+    --color-ui-bar-link: #15C515;
+    --color-ui-bar-link-hover: #FFF;
+    --color-ui-bar-search-text: #FFF;
+    --color-ui-bar-search-underline: #3D3D3D;
+    --color-ui-bar-search-total: #BABABA;
+    --color-ui-bar-search-selected: #FFF;
+
+    --color-userdetails-bg: #0c0c0c;
+
+    --color-modal-exit-icon: #FFF;
+    --color-modal-header-gradient-from: #000;
+    --color-modal-header-gradient-to: #000000;
+    --color-modal-bg: #101010;
+    --color-modal-actions-gradient-from: #000;
+    --color-modal-actions-gradient-to: #000000;
+
+    --color-table-border: #232323;
+    --color-table-header-bg: #060504;
+    --color-table-header-text: #FFF;
+    --color-table-row-text: #C2C2C2;
+    --color-table-row-bg: #000;
+    --color-table-row-odd-bg: #0F0F09;
+    --color-table-row-hover-bg: #0f0f0f;
+    /* 060606 */
+    --color-table-row-myrow-bg: #070707;
+    --color-table-link-icon: #303030;
+    --color-table-icon-bg: #050505;
+
+    --color-data-border: #1A1A1A;
+    --color-data-bg: #0D0B0A;
+    --color-data-text: #FFF;
+
+    --color-checkbox-bg: #000;
+    --color-checkbox-check: #FFF;
+    --color-checkbox-border: #232323;
+    --color-checkbox-border-hover: #3A3A3A;
+    
+    --color-checkbox-label: #AFAFAF;
+    --color-checkbox-toggle-bg: #333;
+    --color-checkbox-toggle-bg-hover: #444;
+    --color-checkbox-toggle-checked: #3BB6FF;
+    --color-checkbox-toggle-focused: #00a2ff;
+    --color-checkbox-slider-checked: #ABABAB;
+    --color-checkbox-slider-focused: #FFF;
+    --color-checkbox-label-hover: #CCC;
+
+    --color-progress-bg: #15C515;
+    --color-progress-bar: #3de93d;
+
+    --color-input-bg: #000;
+    --color-input-border: #232323;
+    --color-input-border-hover: #3A3A3A;
+    --color-input-text: #EEE;
+    --color-input-text-hover: #FFF;
+    --color-input-icon: #FFF;
+    /* --color-input-highlight-border: #3BB6FF; */
+    --color-input-highlight-bg: #00649e;
+
+    --color-dropdown-bg: #000;
+    --color-dropdown-text: #FFF;
+    --color-dropdown-border: #232323;
+    --color-dropdown-border-hover: #3A3A3A;
+    --color-dropdown-text-focus: #EEE;
+
+    --color-label-bg: #27292B;
+    --color-label-text: #AFAFAF;
+    --color-label-basic-bg: #000;
+    --color-label-basic-text: #AFAFAF;
+    --color-label-basic-border: #232323;
+
+    --color-tabmenu-border: #232323;
+    --color-tabmenu-text-hover: #FFF;
+    --color-tabmenu-secondary-bg-hover: rgba(255, 255, 255, 0.05);
+
+    --color-toolbar-bg: #111;
+    --color-toolbar-border: #232323;
+
+    --color-segment-bg: #000;
+    --color-segment-border: #232323;
+
+    --color-message-bg: #000;
+    --color-message-border: #232323;
+    --color-message-text: #FFF;
+
+    --color-message-or-bg: #101010;
+    --color-message-or-text: #AFAFAF;
+
+    --color-message-info-bg: #031727;
+    --color-message-info-text: #1fb4e4;
+    --color-message-info-header: #00a1d2;
+    --color-message-info-border: #000;
+
+    --color-message-warning-bg: #211503;
+    --color-message-warning-text: #ad8239;
+    --color-message-warning-header: #ad8239;
+    --color-message-warning-border: #000;
+
+    --color-message-error-bg: #1d0303;
+    --color-message-error-text: #d25a58;
+    --color-message-error-header: #d25a58;
+    --color-message-error-border: #000;
+
+    --color-thumb-overlay-bg: #47aa3e;
+    --color-thumb-overlay-text: #FFF;
+    --color-thumb-overlay-link-hover: #CCC;
+
+    --color-toolmenu-title-bg: #000;
+    --color-toolmenu-title-border: #191919;
+    --color-toolmenu-title-text: #AFAFAF;
+    --color-toolmenu-content-bg: #030303;
+    --color-toolmenu-content-border: #191919;
+    --color-toolmenu-content-text: #AFAFAF;
+}
+
+#ui-header {
+    border-bottom: 1px solid var(--color-leftmenu-border);
+}
+#logo > img {
+    filter: brightness(0) saturate(100%) invert(52%) sepia(89%) saturate(1513%) hue-rotate(79deg) brightness(96%) contrast(100%);
+}

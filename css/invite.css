@@ -1,0 +1,150 @@
+/* #region GLOBAL ELEMENTS */
+body {
+    background: #1C84C3;
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, div, button {
+    font-family: 'Roboto', sans-serif;
+}
+/* #endregion */
+/* #region FORM ELEMENTS */
+.page-head {
+    background: #000000;
+    color: #FFFFFF;
+    width: 100%;
+}
+.page-head > div {
+    margin: 0px auto;
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
+}
+.page-head img {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.page-head h1 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    /*background: #00827c;*/
+    font-family: "Trade Gothic";
+    font-size: 18px;
+    color: #1C84C3;
+    font-weight: 500;
+    line-height: 32px;
+}
+.page-body {
+    /*background: #1C84C3;*/
+    /*background: #000000;*/
+    color: #FFFFFF;
+    /*background: #ebebeb;*/
+    /*color: #000000;*/
+    width: 100%;
+    background: linear-gradient(to bottom,  rgba(65,154,214,1) 0%,rgba(28,132,195,1) 100%);
+}
+.page-body .ui.form {
+    margin: 0px auto;
+    padding: 2px 0px 20px;
+    width: 300px;
+    text-align: left;
+    z-index: 5;
+}
+.page-body h1 {
+    font-size: 22px;
+    text-align: center;
+    padding: 20px 0px 0px;
+    color: #FFF;
+}
+.page-body p {
+    font-size: 16px;
+    text-align: center;
+    padding: 0px;
+    width: 300px;
+    margin: 20px auto;
+}
+.page-body .ui.form .field > label {
+    color: #FFFFFF;
+    font-weight: 300;
+}
+.page-body .ui.form .field > input {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 14px;
+    /*background: #1070a7;*/
+    /*color: #FFFFFF;*/
+}
+#form-do {
+    text-align: center;
+    margin: 0px auto;
+    width: 140px;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+}
+p.statement {
+    font-size: 12px;
+    margin: 20px auto;
+    display: block;
+    width: 300px;
+    color: #FFFFFF;
+}
+p.statement a:link,
+p.statement a:visited {
+    color: #FFFFFF;
+}
+p.statement a:hover {
+    text-decoration: underline;
+}
+.ui.message.error .header,
+.ui.message.error h1 {
+    text-align: center;
+}
+.btn {
+    font-size: .78571429rem;
+    display: inline-block;
+    min-height: 1em;
+    outline: 0;
+    border: none;
+    vertical-align: baseline;
+    background: #E0E1E2;
+    color: rgba(0,0,0,.6);
+
+    padding: .78571429em 1.5em;
+    text-transform: none;
+    text-shadow: none;
+    font-weight: 700;
+    line-height: 1em;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    border-radius: .28571429rem;
+    box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgba(34,36,38,.15) inset;
+
+    transition: opacity .2s ease,background-color .2s ease,color .2s ease,box-shadow .2s ease,background .2s ease;
+}
+.btn i {
+    margin: 0 .42857143em 0 -.21428571em;
+    transition: opacity .2s ease;
+    height: .85714286em;
+    opacity: .8;
+    font-size: 1em;
+}
+.btn:hover {
+    background: #1C84C3;
+    color: #FFFFFF;
+}
+/* #endregion */
+/* #region RESPONSIVE CSS */
+@media only screen and (max-width: 420px) {
+    .page-body .ui.form {
+        width: 200px;
+        text-align: left;
+        z-index: 5;
+    }
+    #form-do {
+        width: 120px;
+    }
+}
+/* #endregion */

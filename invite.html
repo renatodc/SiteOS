@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SiteOS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link type="text/css" rel="stylesheet" href="css/font.css" />
+    <link type="text/css" rel="stylesheet" href="css/vendor/reset.css">
+    <link type="text/css" rel="stylesheet" href="semantic/dist/semantic.min.css">
+    <link type='text/css' rel='stylesheet' href='css/theme-standard.css'>
+    
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link type="text/css" rel="stylesheet" href="css/sui.css">
+    <link type="text/css" rel="stylesheet" href="css/invite.css">
+
+    <link type="text/css" rel="stylesheet" href="css/vendor/toastr.min.css">
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+</head>
+<body>
+    <div class="page-head">
+        <div>
+            <img src="img/logo.png" />
+            <h1>SiteOS</h1>
+        </div>
+    </div>
+    <div class="page-body">
+        <h1>Welcome</h1>
+        <p id="ln1">You have a new account for <span id="form-company"></span></p>
+        <p id="ln2">Please enter a password for your new account: <br /><span id="form-email"></span></p>
+        <div class="ui form">
+            <div class="field" id="form-password">
+                <label>Password</label>
+                <input type="password" name="form-password" placeholder="">
+            </div>
+            <div class="ui error message">
+                <div class="header">Missing Password</div>
+                <p>Please enter a password</p>
+            </div>
+            <div class="ui warning message">
+                <div class="header">Password Doesn't Meet Requirements</div>
+                <p>Password must have at least 8 characters, and should include an uppercase letter, a number, and a symbol</p>
+            </div>
+        </div>
+
+        <div class="ui button" id="form-do">Sign up</div>
+    </div>
+    <div class="ui page dimmer">
+        <div class="ui loader"></div>
+    </div>
+    <script src="js/vendor/toastr.min.js"></script>
+    <script src="js/invite.js"></script>
+</body>
+</html>

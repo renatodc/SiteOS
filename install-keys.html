@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SiteOS Install Keys</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link type="text/css" rel="stylesheet" href="css/font.css" />
+    <link type="text/css" rel="stylesheet" href="css/vendor/reset.css">
+    <link type="text/css" rel="stylesheet" href="semantic/dist/semantic.min.css">
+    <link type='text/css' rel='stylesheet' href='css/theme-standard.css'>
+
+    <!-- <link type="text/css" rel="stylesheet" href="css/main.css"> -->
+    <link type="text/css" rel="stylesheet" href="css/sui.css">
+    <link type="text/css" rel="stylesheet" href="css/install.css">
+
+    <link type="text/css" rel="stylesheet" href="css/vendor/toastr.min.css">
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="semantic/dist/semantic.min.js"></script>    
+</head>
+<body>
+    <div class="login-head">
+        <div>
+            <img src="img/logo-large.png" style="width: 64px; height: 64px;" />
+            <h1>SiteOS</h1>
+        </div>
+    </div>
+    <div class="login-body">
+        <div class="ui form">
+        <h1>Install Keys!</h1>
+            <div class="field">
+                <label>Company Name</label>
+                <input type="text" name="form-companyname" id="form-companyname">
+            </div>
+            <div class="field">
+                <label>Your Name</label>
+                <input type="text" name="form-customername" id="form-customername">
+            </div>
+            <div class="field">
+                <label>Domain Name</label>
+                <input type="text" name="form-domainname" id="form-domainname" placeholder="domain.com">
+            </div>
+            <div class="field">
+                <label>Email</label>
+                <div class="ui right labeled input">
+                    <input type="text" name="form-email" id="form-email" placeholder="Enter email handle">
+                    <div class="ui basic label" id="form-emaildomain">@domain.com</div>
+                </div>
+            </div>
+            <div class="field">
+                <label>Password</label>
+                <input type="password" name="form-password" id="form-password">
+            </div>
+            <div class="ui button" id="install-continue">Next<i class="icon angle double right"></i></div>
+            <div class="ui error message">
+                <h1>Empty Fields</h1>
+                <p>Please fill out all fields.</p>
+            </div>
+            <div class="ui warning message">
+                <h1>Invalid Password</h1>
+                <p>Password must be at least 8 characters in length.</p>
+            </div>
+        </div>
+    </div>
+    <div class="ui page dimmer">
+        <div class="ui loader"></div>
+    </div>
+    <script src="js/vendor/toastr.min.js"></script>
+    <script src="js/install.js"></script>
+</body>
+</html>

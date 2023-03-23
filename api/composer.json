@@ -1,0 +1,8 @@
+{
+    "require": {
+        "geoip2/geoip2":"~2.0",
+        "aws/aws-sdk-php": "^3.87",
+        "guzzlehttp/guzzle": "^6.5",
+        "ezyang/htmlpurifier": "^4.13"
+    }
+}

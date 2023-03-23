@@ -1,0 +1,17 @@
+:80 {
+    root * /srv
+    try_files {path}.php {path}.html {path}
+    php_fastcgi php-fpm:9000
+    file_server
+}
+
+(html) {
+    try_files {path}.html {path}
+    file_server
+}
+
+(nocache) {
+    header {
+        Cache-Control "no-store, max-age=0"
+    }
+}

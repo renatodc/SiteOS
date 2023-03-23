@@ -1,0 +1,10 @@
+SITEOS
+
+Deploy a CRM/CMS-enabled website in seconds, along with business email and other internal tools.
+
+Works with Mailgun API.
+
+
+INSTALL
+
+Run docker compose up, then open localhost/install via a browser to setup SiteOS.

@@ -1,0 +1,35 @@
+/* #region FORM ELEMENTS */
+.ui.accordion .ui.header:first-child {
+    margin-top: 26px;
+}
+.ui.accordion .ui.header {
+    margin-top: 0px;
+}
+.ui.info.message {
+    display: none;
+}
+.ui.form.info .info.message:not(:empty) {
+    display: block;
+}
+#user-language>.selection.dropdown>.dropdown.icon,
+#user-theme>.selection.dropdown>.dropdown.icon {
+    transform: rotate(180deg);
+}
+/* #endregion */
+/* #region RESPONSIVE CSS */
+@media only screen and (max-width: 1270px) {
+    #ui-search, #ui-counters {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1098px) {
+    #ui-search, #ui-counters {
+        display: block;
+    }
+}
+@media only screen and (max-width: 550px) {
+    #ui-search, #ui-counters {
+        display: none;
+    }
+}
+/* #endregion */

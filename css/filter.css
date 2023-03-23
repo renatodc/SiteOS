@@ -1,0 +1,15 @@
+/* #region FORM ELEMENTS */
+.ui-table {
+    max-width: 1000px;
+}
+#filter-statement {
+    max-width: 300px;
+}
+/* #endregion */
+/* #region RESPONSIVE CSS */
+@media only screen and (max-width: 400px) {
+    #ui-search, #ui-counters {
+        display: none;
+    }
+}
+/* #endregion */

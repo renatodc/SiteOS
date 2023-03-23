@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Account Recovery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="img/logo.png">
+
+    <link type="text/css" rel="stylesheet" href="css/font.css" />
+    <link type="text/css" rel="stylesheet" href="css/vendor/reset.css">
+    <link type="text/css" rel="stylesheet" href="semantic/dist/semantic.min.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link type="text/css" rel="stylesheet" href="css/recover.css">
+
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="semantic/dist/semantic.min.js"></script>    
+</head>
+<body>
+    <div class="login-head">
+        <div>
+            <img src="img/logo-large.png" />
+            <h1>SiteOS</h1>
+        </div>
+    </div>
+    <div class="login-body">
+        <div class="ui form">
+            <div class="field">
+                <input type="password" name="login-password" id="login-password" minlength="8" placeholder="Type in new password">
+            </div>
+            <div class="field" id="login-show">
+                <div class="ui checkbox">
+                    <input type="checkbox" class="hidden">
+                    <label>Show password</label>
+                </div>
+            </div>
+            <button class="ui button" id="login-reset">Reset Password</button>
+            <div class="ui error message">
+                <h1>Invalid Password</h1>
+                <p>Password must be at least 8 characters in length.</p>
+            </div>
+        </div>
+    </div>
+    <div class="ui page dimmer">
+        <div class="ui loader"></div>
+    </div>
+    <script src="js/recover.js"></script>
+</body>
+</html>

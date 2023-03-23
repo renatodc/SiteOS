@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('font/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Michroma';
+    font-style: normal;
+    font-weight: 400;
+    src: url('font/Michroma.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Trade Gothic';
+    font-weight: 800;
+    src: url('font/TradeGothicLTStd-Extended.otf') format('opentype');
+}

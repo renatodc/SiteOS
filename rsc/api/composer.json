@@ -1,0 +1,8 @@
+{
+    "require": {
+        "geoip2/geoip2":"~2.0",
+        "mailgun/mailgun-php": "^3.5.5",
+        "php-http/curl-client": "^2.2.1",
+        "guzzlehttp/psr7": "^1.4"
+    }
+}

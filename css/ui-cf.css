@@ -1,0 +1,241 @@
+#cf-add {
+    font-size: 13px;
+}
+#cf-add-field {
+    display: none;
+    text-align: center;
+}
+#cfc-add-field .btn {
+    margin-top: 20px;
+}
+.field-edit-btn {
+    display: none;
+    float: right;
+    margin-left: 3px;
+    color: var(--color-label-text);
+    opacity: 0.6;
+    vertical-align: bottom;
+    outline: none;
+}
+.field-edit-btn i {
+    margin: 0px;
+    padding: 0px;
+}
+.field-edit-btn.cancel:hover {
+    color: var(--color-red);
+}
+.field-edit-btn.edit:hover {
+    color: var(--color-primary);
+}
+#fieldtype-datetime + .icon.calendar {
+    font-size: 32px;
+}
+#fieldtype-datetime + .icon.wait {
+    font-size: 18px; 
+    vertical-align: center;
+}
+.leadcf .ui.checkbox {
+    display: block;
+    margin: 6px 0px;
+}
+.ui.calendar.field table th,
+.ui.calendar.field table td {
+    text-align: center;
+}
+/* #region CUSTOM FIELD PICKBOXES */
+.fieldtype {
+    margin: 0px 0px 15px;
+}
+.ui.cards>.card {
+    display: inline-block;
+    margin: 6px 4px;
+    text-align: center;
+    width: 122px;
+    min-height: 0;
+    background: var(--color-btn-bg);
+    padding: 0;
+    border: none;
+    border-radius: .28571429rem;
+    box-shadow: 0 1px 3px 0 var(--color-checkbox-border), 0 0 0 1px var(--color-checkbox-border);
+    -webkit-transition: box-shadow .2s ease,-webkit-transform .2s ease;
+    transition: box-shadow .2s ease,-webkit-transform .2s ease;
+    transition: box-shadow .2s ease,transform .2s ease;
+    transition: box-shadow .2s ease,transform .2s ease,-webkit-transform .2s ease;
+    position: relative;
+    cursor: pointer;
+}
+.ui.cards>.card>.image {
+    display: block;
+    padding: 8px 0px;
+    background: var(--color-checkbox-toggle-bg);
+    transition: background-color .2s ease;
+}
+.ui.cards>.card:hover {
+    box-shadow: 0 1px 3px 0 var(--color-checkbox-border), 0 0 0 1px var(--color-primary);
+}
+.ui.cards>.card:hover > .image {
+    background: var(--color-primary);
+}
+.ui.cards>.card:hover > .image > .icon {
+    color: var(--color-link-hover);
+}
+
+.ui.cards>.card>.image .ui.checkbox {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+}
+.ui.cards>.card>.image > .icon {
+    font-size: 32px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.ui.cards>.card>:first-child {
+    border-radius: .28571429rem .28571429rem 0 0!important;
+    border-top: none!important;
+}
+.ui.cards>.card>.content {
+    border: none;
+    border-top: 1px solid var(--color-table-border);
+    margin: 0;
+    padding: 6px;
+    box-shadow: none;
+    border-radius: 0;
+}
+.ui.cards>.card>.content>.header:not(.ui) {
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: -.21425em;
+    /* line-height: 1.28571429em; */
+}
+.ui.cards>.card>.content>a.header {
+    color: var(--color-h1);
+}
+/* #endregion */
+/* #region CUSTOM FIELD MODAL */
+.ui.form .fieldextra > div {
+    display: none;
+}
+#dt-datetime {
+    display: none;
+}
+#dt-datetime-value, #dt-datetime tr td, #dt-datetime th td {
+    text-align: center;
+}
+.group-options > .field {
+    width: 50%;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px 6px 0px 0px;
+}
+#dd-add {
+    text-align: center;
+}
+#dd-add a, #dd-add a:link {
+    font-size: 13px;
+}
+#dd-add span {
+    padding: 0px 6px;
+}
+.dd-opt-delete {
+    float: right;
+    color: var(--color-h1);
+    opacity: 0.6;
+    vertical-align: bottom;
+    outline: none;
+}
+.dd-opt-delete:hover {
+    color: var(--color-red);
+}
+.dd-opt-delete i {
+    margin: 0px;
+    padding: 0px;
+}
+.dd-opt-default {
+    float: right;
+    vertical-align: bottom;
+}
+#dt-default .ui.radio.checkbox {
+    display: block;
+    margin: 8px 0px;
+}
+#chk-type .ui.radio.checkbox {
+    display: block;
+    margin: 4px 0px;
+}
+.group-multichoice .ui.checkbox {
+    display: block;
+    margin: 4px 0px;
+}
+#val-min, #val-max, #val-color, #val-icon, #val-show {
+    display: none;
+}
+.ui.icon.buttons > .increment {
+    background-color: var(--color-btn-bg);
+    transition: background-color .2s ease;
+    box-shadow: 0 0 0 1px #21ba45 inset!important;
+    color: #21ba45!important;
+    height: 24.5px;
+    padding: 5px;
+}
+.ui.icon.buttons > .decrement {
+    background-color: var(--color-btn-bg);
+    transition: background-color .2s ease;
+    box-shadow: 0 0 0 1px #db2828 inset!important;
+    color: #db2828!important;
+    height: 24.5px;
+    padding: 5px;
+}
+.ui.icon.buttons > .increment:hover {
+    background-color: #21ba45;
+}
+.ui.icon.buttons > .increment:hover i {
+    color: var(--color-table-link-icon);
+}
+.ui.icon.buttons > .decrement:hover {
+    background-color: #db2828;
+}
+.ui.icon.buttons > .decrement:hover i {
+    color: var(--color-table-link-icon);
+}
+.ui.icon.buttons > .increment i,
+.ui.icon.buttons > .decrement i {
+    padding-top: 1px;
+}
+/* #endregion */
+@media only screen and (max-height: 750px) {
+    .fieldtype {
+        margin: 0px 0px 15px;
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .ui.cards>.card>.image > .icon {
+        font-size: 24px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .ui.cards>.card>.image {
+        display: block;
+        padding: 4px 0px;
+    }
+    .ui.cards>.card {
+        display: inline-block;
+        margin: 4px 2px;
+        text-align: center;
+        vertical-align: top;
+        min-height: 0;
+        padding: 0;
+        border: none;
+        border-radius: .28571429rem;
+        -webkit-transition: box-shadow .2s ease,-webkit-transform .2s ease;
+        transition: box-shadow .2s ease,-webkit-transform .2s ease;
+        transition: box-shadow .2s ease,transform .2s ease;
+        transition: box-shadow .2s ease,transform .2s ease,-webkit-transform .2s ease;
+        position: relative;
+        cursor: pointer;
+    }
+    #fieldtype-datetime + .icon.calendar {
+        font-size: 24px;
+    }
+}

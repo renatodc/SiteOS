@@ -1,0 +1,19 @@
+#campaign-delete {
+    display: none;
+}
+#modal-recipients table th {
+    text-align: center;
+}
+#modal-recipients table tbody tr td:nth-child(n+2) {
+    color: var(--color-green);
+    text-align: center;
+}
+#modal-recipients table tbody tr td:nth-child(5) {
+    color: rgb(255, 123, 0);
+}
+#modal-recipients table tbody tr td:nth-child(n+6) {
+    color: var(--color-red);
+}
+#modal-msg > .content {
+    color: var(--color-data-text);
+}

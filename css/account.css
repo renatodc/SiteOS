@@ -1,0 +1,44 @@
+/* #region ACTION BAR */
+#ui-header .ui-left {
+    float: left;
+    width: 280px;
+}
+#ui-header .ui-right {
+    float: right;
+    width: calc(100% - 280px);
+}
+#title {
+    max-width: 220px;
+}
+/* #endregion */
+/* #region FORM ELEMENTS */
+.ui-center > div.ui.form {
+    max-width: 900px;
+}
+#user-password {
+    display: none;
+}
+.ui-center .ui.tabular.menu > .item span {
+    margin-left: 6px;
+}
+/* #region TAB: Company Settings */
+#user-logo-reset {
+    display: none;
+}
+/* #endregion */
+/* #endregion */
+/* #region RESPONSIVE CSS */
+@media only screen and (max-width: 900px) {
+    #ui-header .ui-left {
+        width: 41px;
+    }
+    #ui-header .ui-right {
+        width: calc(100% - 41px);        
+    }
+}
+@media only screen and (max-width: 600px) {
+    .ui-center .ui.tabular.menu > .item span {
+        display: none;
+    }
+}
+/* #endregion */

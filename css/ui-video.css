@@ -1,0 +1,162 @@
+/* #region MODAL - GALLERY - STOCK PHOTOS */
+#modal-videos > .content {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#modal-videos > .content .ui.secondary.menu > .item span {
+    margin-left: 6px;
+} 
+.thumb-studio {
+    float: right;
+}
+.thumb-studio {
+    float: right;
+}
+.gallery > span {
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+}
+
+/* #endregion */
+/* #region MODAL - GALLERY - MY PHOTOS */
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding: 0;
+    margin: 0;
+    max-height: 426px;
+    overflow-y: scroll;
+}
+.gallery #videos-upload:link,
+.gallery #videos-upload:visited {
+    font-size: 18px;
+    padding-top: 48px;
+    background: var(--color-btn-bg);
+    color: var(--color-btn-text);
+    outline: 2px solid var(--color-data-border);
+    position: relative;
+
+    display: block;
+    width: 182px;
+    height: 122px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+}
+.gallery #videos-upload:hover {
+    background: var(--color-table-row-hover-bg);
+    color: var(--color-primary);
+    outline: 2px solid var(--color-primary);
+}
+.gallery #videos-upload:focus {
+    background: var(--color-table-row-hover-bg);
+}
+.gallery #videos-upload input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    font-size: 200px !important;
+}
+.gallery #videos-upload .label {
+    font-family: Roboto;
+    font-size: 12px;
+    color: var(--color-btn-text);
+}
+.gallery #videos-upload > .ui.progress {
+    margin: 0px 12px;
+    display: none;
+}
+.gallery > div {
+    width: 25%;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+}
+.thumb-wrapper {
+    display: block;
+    width: 182px;
+    height: 122px;
+}
+.gallery > div a.video-thumb:link,
+.gallery > div a.video-thumb:visited {
+    display: block;
+    width: 182px;
+    height: 122px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+}
+.gallery > div a.video-thumb:hover {
+    background: var(--color-leftmenu-sub-link-bg);
+    outline: 2px solid var(--color-primary);
+}
+.gallery > div a.video-thumb > img {
+    max-height: 100%;
+}
+
+.thumb-overlay {
+    display: none;
+    position: absolute;
+    left: 10px;
+    width: 182px;
+    padding: 3px 6px;
+    font-size: 12px;
+    opacity: 0.75;
+    background: var(--color-thumb-overlay-bg);
+    color: var(--color-thumb-overlay-text);
+}
+.thumb-overlay.top i.icon {
+    margin-right: 0px;
+    margin-left: 4px;
+}
+.thumb-overlay.bottom i.icon {
+    margin-right: 4px;
+    margin-left: 0px;
+}
+.thumb-overlay a:link,
+.thumb-overlay a:visited {
+    color: var(--color-thumb-overlay-text);
+}
+.thumb-overlay a:hover {
+    color: var(--color-thumb-overlay-link-hover);
+}
+.thumb-overlay.top {
+    top: 10px;
+    font-size: 14px;
+}
+.thumb-overlay.bottom {
+    bottom: 10px;
+    font-size: 11px;
+}
+.thumb-dimensions {
+    float: left;
+}
+.thumb-size {
+    float: right;
+}
+.thumb-name {
+    float: left;
+    max-width: 120px;
+    text-overflow: ellipsis;
+    overflow:hidden;
+    white-space: nowrap;
+}
+.thumb-delete {
+    float: right;
+}
+.thumb-source {
+    float: right;
+}
+/* #endregion */
+#videos-embed-thumb {
+    display: none;
+    max-width: 200px;
+    border: 1px solid var(--color-input-border);
+    border-radius: .28571429rem;
+    margin: 0px 0px 10px;
+}
