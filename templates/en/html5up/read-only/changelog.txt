@@ -1,0 +1,2 @@
+-Organized HTML/CSS/JS code
+-Switched local dependencies to external CDN
