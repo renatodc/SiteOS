@@ -12,4 +12,4 @@ rsc/api/vendor/
 php_errors.log
 
 #remove
-templates/thumbs/
+#templates/thumbs/
