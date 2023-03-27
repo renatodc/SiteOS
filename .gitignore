@@ -1,20 +1,13 @@
 api/vendor/
-css/font/
 files/node_modules/
 files/*.bundle.js
 files/bundle.js
 files/*.worker.*
-img/
-js/min/
-js/obf/
-js/orig/
 js/vendor/node_modules/
-mailgun/vendor/
+mail/vendor/
 node_modules/
 rsc/api/vendor/
-rsc/js/obf/
 templates/
-web/
 
 php_errors.log
 
