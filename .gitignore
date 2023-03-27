@@ -7,9 +7,9 @@ js/vendor/node_modules/
 mail/vendor/
 node_modules/
 rsc/api/vendor/
-templates/
+#templates/
 
 php_errors.log
 
 #remove
-#templates/thumbs/
+templates/thumbs/
