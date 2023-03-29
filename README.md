@@ -1,13 +1,18 @@
-<p align="center">
-![SiteOS's Logo](https://renatodc.com/img/siteos.png)
-</p>
-<h1 align="center">SITEOS</h1>
+<img src="https://renatodc.com/img/siteos.png" />
 <p>
-Deploy a CRM/CMS-enabled website in seconds, along with business email and other internal tools. 
+Deploy a CRM/CMS-enabled website in seconds, along with business email and site analytics. 
 <br />
 Works with Mailgun API.
 </p>
-<h1 align="center">INSTALL</h1>
+<h2>Demo</h2>
 <p>
-Run docker compose up, then open localhost/install via a browser to setup SiteOS.
+<a href="https://app.fishpulse.com/demo">https://app.fishpulse.com/demo</a>
+</p>
+<h2>Hosted</h2>
+<p>
+<a href="https://app.fishpulse.com/signup">https://app.fishpulse.com/signup</a>
+</p>
+<h2>Install</h2>
+<p>
+  Run <b>docker compose up</b>, then open <b>localhost/install</b> via a browser to setup SiteOS.
 </p>
