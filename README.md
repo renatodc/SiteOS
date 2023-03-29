@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">SITEOS</h1>
 <p>
-Deploy a CRM/CMS-enabled website in seconds, along with business email and other internal tools.
+Deploy a CRM/CMS-enabled website in seconds, along with business email and other internal tools. 
 <br />
 Works with Mailgun API.
 </p>
