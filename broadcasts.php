@@ -20,7 +20,7 @@
 
 <body>
     <!--HEADER-->
-    <?php include "ui-bar-broadcasts.php" ?>
+    <?php include "inc/ui-bar-broadcasts.php" ?>
     <!--END OF HEADER-->
 
     <!--BODY-->
@@ -204,10 +204,10 @@
     </div>
 
 
-    <?php include "modal-info.php" ?>
-    <?php include "modal-write.php" ?>
-    <?php include "modal-add-link.php" ?>
-    <?php include "modal-templates.php" ?>
+    <?php include "inc/modal-info.php" ?>
+    <?php include "inc/modal-write.php" ?>
+    <?php include "inc/modal-add-link.php" ?>
+    <?php include "inc/modal-templates.php" ?>
     <!--END OF MODALS-->
 
     <div class="ui main page dimmer">

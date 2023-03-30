@@ -7,7 +7,7 @@
 </head>
 <body>
     <!--HEADER-->
-    <?php include "ui-bar-templates.php" ?>
+    <?php include "inc/ui-bar-templates.php" ?>
     <!--END OF HEADER-->
 
     <!--BODY-->

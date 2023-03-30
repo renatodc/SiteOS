@@ -18,7 +18,7 @@
 
 <body>
     <!--HEADER-->
-    <?php include "ui-bar-mail.php" ?>
+    <?php include "inc/ui-bar-mail.php" ?>
     <!--END OF HEADER-->
 
     <!--BODY-->
@@ -196,10 +196,10 @@
             </div>
         </div>
     </div>
-    <?php include "modal-info.php" ?>
-    <?php include "modal-write.php" ?>
-    <?php include "modal-add-link.php" ?>
-    <?php include "modal-templates.php" ?>
+    <?php include "inc/modal-info.php" ?>
+    <?php include "inc/modal-write.php" ?>
+    <?php include "inc/modal-add-link.php" ?>
+    <?php include "inc/modal-templates.php" ?>
 
     <div class="ui small modal" id="modal-stats">
         <i class="close icon"></i>

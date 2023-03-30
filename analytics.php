@@ -10,7 +10,7 @@
 
   <body>
     <!--HEADER-->
-    <?php include "ui-bar-analytics.php" ?>
+    <?php include "inc/ui-bar-analytics.php" ?>
     <!--END OF HEADER-->
 
     <!--BODY-->

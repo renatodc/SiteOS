@@ -23,7 +23,7 @@
 
   <body>
     <!--HEADER-->
-    <?php include "ui-bar-lead.php" ?>
+    <?php include "inc/ui-bar-lead.php" ?>
     <!--END OF HEADER-->
 
     <div class="ui-runcall">
@@ -151,7 +151,7 @@
     <!--END OF BODY-->
 
     <!--MODALS-->
-    <?php include "modal-info.php" ?>
+    <?php include "inc/modal-info.php" ?>
     
     <div class="ui modal" id="modal-add-contact">
         <i class="close icon"></i>
@@ -425,7 +425,7 @@
                     <a href="#" class="btn tb-html"><i class="icon code"></i><span>Plain / HTML</span></a>
                     <label>Message</label>
                     <div contenteditable="true" class="ui-message" id="log-note-editor" placeholder="Description" tabindex="2"></div>
-                    <?php include "ui-toolbar-content-slim.php" ?>
+                    <?php include "inc/ui-toolbar-content-slim.php" ?>
                 </div>
                 <div class="field" id="log-note-attachments">
                     <label>Attachments</label>
@@ -647,12 +647,12 @@
         </div>
     </div>
     
-    <?php include "modal-lead.php" ?>
-    <?php include "modal-field.php" ?>
-    <?php include "modal-field-delete.php" ?>
-    <?php include "modal-write.php" ?>
-    <?php include "modal-add-link.php" ?>
-    <?php include "modal-templates.php" ?>
+    <?php include "inc/modal-lead.php" ?>
+    <?php include "inc/modal-field.php" ?>
+    <?php include "inc/modal-field-delete.php" ?>
+    <?php include "inc/modal-write.php" ?>
+    <?php include "inc/modal-add-link.php" ?>
+    <?php include "inc/modal-templates.php" ?>
     <!--END OF MODALS-->
 
     <div class="ui main page dimmer">

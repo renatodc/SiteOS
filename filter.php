@@ -9,7 +9,7 @@
 
   <body>
     <!--HEADER-->
-    <?php include "ui-bar-filter.php" ?>
+    <?php include "inc/ui-bar-filter.php" ?>
     <!--END OF HEADER-->
 
     <!--BODY-->

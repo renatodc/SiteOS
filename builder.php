@@ -23,7 +23,7 @@ header("Expires: 0"); // Proxies.
 </head>
 <body>
     <!--HEADER-->
-    <?php include "ui-bar-builder.php" ?>
+    <?php include "inc/ui-bar-builder.php" ?>
     <!--END OF HEADER-->
 
     <!--BODY-->
@@ -993,8 +993,8 @@ header("Expires: 0"); // Proxies.
         </div>
     </div>
 
-    <?php include "modal-gallery-images.php" ?>
-    <?php include "modal-gallery-videos.php" ?>
+    <?php include "inc/modal-gallery-images.php" ?>
+    <?php include "inc/modal-gallery-videos.php" ?>
     
     <div class="ui tiny modal" id="modal-page-add">
         <i class="close icon"></i>

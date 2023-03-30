@@ -30,7 +30,7 @@ if(array_key_exists("list",$_GET) && !empty($_GET["list"])) {
 
   <body>
     <!--HEADER-->
-    <?php include "ui-bar-leads.php" ?>
+    <?php include "inc/ui-bar-leads.php" ?>
     <!--END OF HEADER-->
 
     <!--BODY-->
@@ -429,10 +429,10 @@ if(array_key_exists("list",$_GET) && !empty($_GET["list"])) {
         </div>
     </div>
 
-    <?php include "modal-info.php" ?>
-    <?php include "modal-lead.php" ?>
-    <?php include "modal-field.php" ?>
-    <?php include "modal-field-delete.php" ?>
+    <?php include "inc/modal-info.php" ?>
+    <?php include "inc/modal-lead.php" ?>
+    <?php include "inc/modal-field.php" ?>
+    <?php include "inc/modal-field-delete.php" ?>
     <!--END OF MODALS-->
 
     <div class="ui main page dimmer">

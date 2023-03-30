@@ -19,7 +19,7 @@
 
   <body>
     <!--HEADER-->
-    <?php include "ui-bar-accounts.php" ?>
+    <?php include "inc/ui-bar-accounts.php" ?>
     <!--END OF HEADER-->
 
     <!--BODY-->
@@ -168,7 +168,7 @@
                             <a href="#" class="btn tb-html" id="toolbar-html"><i class="icon code"></i><span>Plain / HTML</span></a>
                             <label>Email Signature</label>
                             <div contenteditable="true" class="user-mail-signature ui-message" id="user-mail-signature" tabindex="7"></div>
-                            <?php include "ui-toolbar-content-signature.php" ?>
+                            <?php include "inc/ui-toolbar-content-signature.php" ?>
                         </div>
                     </div>
                     <div class="title active ui dividing header" id="header-display">
@@ -293,10 +293,10 @@
         </div>
     </div>
 
-    <?php include "modal-info.php" ?>
-    <?php include "modal-add-link.php" ?>
-    <?php include "modal-templates.php" ?>
-    <?php include "modal-gallery-images.php" ?>
+    <?php include "inc/modal-info.php" ?>
+    <?php include "inc/modal-add-link.php" ?>
+    <?php include "inc/modal-templates.php" ?>
+    <?php include "inc/modal-gallery-images.php" ?>
     <!--END OF MODALS-->
 
     <div class="ui main page dimmer">
