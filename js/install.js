@@ -39,30 +39,26 @@ $(function() {
             }
         });
         installRequest.done(function(res) {
-            console.log("POST successful");
             if(parseInt(res.code) == 1) {
-                $(".login-body .ui.form").removeClass("error");
-                var installRequest2 = $.ajax({
-                    method: "PATCH",
-                    url: installAPI
-                });
-                installRequest2.done(function(res2) {
-                    console.log("PATCH successful");
-                    location.replace("app." + formDomainName + "/install-keys");
-                    //location.replace("/install-keys");
-                });
-                installRequest2.fail(function() {
-                    console.log("PATCH failed");
-                });
-                installRequest2.always(function() {
-                });
+                location.replace("/install-keys");
+                // $(".login-body .ui.form").removeClass("error");
+                // var installRequest2 = $.ajax({
+                //     method: "PATCH",
+                //     url: installAPI
+                // });
+                // installRequest2.done(function(res2) {
+                //     location.replace("app." + formDomainName + "/install-keys");
+                // });
+                // installRequest2.fail(function() {
+                // });
+                // installRequest2.always(function() {
+                // });
             } else {
                 $(".login-body .ui.form .ui.error p").html(res.msg);
                 $(".login-body .ui.form").addClass("error");
             }
         });
         installRequest.fail(function() {
-            console.log("POST failed");
         });
         installRequest.always(function() {
         });

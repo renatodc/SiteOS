@@ -27,45 +27,22 @@
     </div>
     <div class="login-body">
         <div class="ui form">
-        <h1>Install Keys!</h1>
-            <div class="field">
-                <label>Company Name</label>
-                <input type="text" name="form-companyname" id="form-companyname">
-            </div>
-            <div class="field">
-                <label>Your Name</label>
-                <input type="text" name="form-customername" id="form-customername">
-            </div>
-            <div class="field">
-                <label>Domain Name</label>
-                <input type="text" name="form-domainname" id="form-domainname" placeholder="domain.com">
-            </div>
-            <div class="field">
-                <label>Email</label>
-                <div class="ui right labeled input">
-                    <input type="text" name="form-email" id="form-email" placeholder="Enter email handle">
-                    <div class="ui basic label" id="form-emaildomain">@domain.com</div>
-                </div>
-            </div>
-            <div class="field">
-                <label>Password</label>
-                <input type="password" name="form-password" id="form-password">
-            </div>
-            <div class="ui button" id="install-continue">Next<i class="icon angle double right"></i></div>
-            <div class="ui error message">
-                <h1>Empty Fields</h1>
-                <p>Please fill out all fields.</p>
-            </div>
-            <div class="ui warning message">
-                <h1>Invalid Password</h1>
-                <p>Password must be at least 8 characters in length.</p>
-            </div>
+        <h1>System Setup</h1>
+        <p>To finish setting up your SiteOS instance, follow the instructions below:
+            <br /><br />
+            - Update your config.ini file (located at /home/config.ini). Add your Mailgun private key, your AWS access keys, and your AWS S3 settings. 
+            <br /><br />
+            - Set up inbound email for Mailgun as shown in this <a href="https://documentation.mailgun.com/en/latest/quickstart-receiving.html" target="_blank">link</a>, and add the following route to store inbound emails "https://app.[your domain name].com/mail/email-store.php".
+            <br /><br />
+            - Set up your <a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html" target="_blank">AWS credentials</a> file.
+            <br /><br />
+            - Run <b>caddy restart</b> to restart the web server. Your SiteOS instance should then be accessible by going to https://app.[your domain name].com
+        </p>
         </div>
     </div>
     <div class="ui page dimmer">
         <div class="ui loader"></div>
     </div>
     <script src="js/vendor/toastr.min.js"></script>
-    <script src="js/install.js"></script>
 </body>
 </html>
